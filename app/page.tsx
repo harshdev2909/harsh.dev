@@ -1,12 +1,10 @@
-import Image from "next/image";
+
 import { navItems } from "../data";
 import Hero from "../components/Hero";
 import { FloatingNav } from "../components/ui/FloatingNav";
 import Grid from "../components/Grid";
 import { Bio } from "../components/Bio";
 import RecentProjects from "../components/RecentProjects";
-import Heados from "../components/Heados";
-import { Skills } from "../components/Skills";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 
@@ -19,7 +17,6 @@ export default function Home() {
         <Hero/>
         <Grid/>
         <Bio/>
-        {/* <Heados/> */}
         <RecentProjects/>
         <Experience/>
         <Footer/>
