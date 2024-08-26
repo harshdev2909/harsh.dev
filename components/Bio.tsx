@@ -3,7 +3,7 @@ import React from "react";
 import myImg from "../public/myImg.jpg";
 import { Spotlight } from "../components/ui/Spotlight";
 import Image from "next/image";
-import { MaskContainer } from "./ui/MaskEffect.tsx";
+
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { TextEffect } from "./ui/TextEffect";
 

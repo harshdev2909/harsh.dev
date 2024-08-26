@@ -76,7 +76,11 @@ export const navItems = [
       des: "The Background Remover WebApp is a powerful and user-friendly tool designed to help users easily remove backgrounds from images with just a few clicks.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+<<<<<<< HEAD
       link: "https://github.com/harshdev2909/Background-remover",
+=======
+      link: "",
+>>>>>>> cc9339fe427319584b98612e05db8f337c8f59d6
     },
     {
       id: 2,
