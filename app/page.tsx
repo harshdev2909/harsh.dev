@@ -7,6 +7,7 @@ import { Bio } from "../components/Bio";
 import RecentProjects from "../components/RecentProjects";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero/>
         <Grid/>
         <Bio/>
+        <Skills/>
         <RecentProjects/>
         <Experience/>
         <Footer/>
