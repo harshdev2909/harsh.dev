@@ -1,9 +1,8 @@
 "use client";
-
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "./../data";
 import { PinContainer } from "./ui/Pin";
+import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const RecentProjects = () => {
   return (
@@ -20,7 +19,7 @@ const RecentProjects = () => {
           >
             <PinContainer
               title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              href="https://twitter.com/"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
@@ -50,29 +49,21 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
-              </div>
-            </PinContainer>
+        <div className="flex items-center justify-between mt-6 gap-1">
+          <a href={item.live} ><MagicButton
+              title="Preview"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+            </a>
+          <a href={item.link} ><MagicButton
+              title="Github"
+              icon={<FaLocationArrow />}
+              position="left"
+            /></a>
+          
+        </div>
+          </PinContainer>
           </div>
         ))}
       </div>

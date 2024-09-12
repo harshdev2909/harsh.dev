@@ -74,13 +74,10 @@ export const navItems = [
       id: 1,
       title: "Background Remover",
       des: "The Background Remover WebApp is a powerful and user-friendly tool designed to help users easily remove backgrounds from images with just a few clicks.",
-      img: "/p1.svg",
+      img: "/bgs.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-<<<<<<< HEAD
       link: "https://github.com/harshdev2909/Background-remover",
-=======
-      link: "",
->>>>>>> cc9339fe427319584b98612e05db8f337c8f59d6
+      live:"https://background-remover-ten.vercel.app/",
     },
     {
       id: 2,
@@ -89,6 +86,7 @@ export const navItems = [
       img: "/p2.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "",
+      live:"",
     },
     {
       id: 3,
@@ -97,6 +95,7 @@ export const navItems = [
       img: "/p3.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "",
+      live:"",
     },
     {
       id: 4,
@@ -105,6 +104,7 @@ export const navItems = [
       img: "/p4.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "",
+      live:"",
     },
   ];
   
