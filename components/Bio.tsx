@@ -23,16 +23,17 @@ export function Bio() {
         <Image
           src={myImg}
           alt=""
-          className="h-[600px] w-[400px] rounded-sm object-contain sm:h-[800px] sm:w-[600px]"
+          className="h-[300px] w-[400px] rounded-sm object-contain sm:h-[400px] sm:w-[600px]"
         />
+        
         <h1 className="mt-4 w-full text-left  text-[24px] font-medium text-neutral-300">
           Short Bio
         </h1>
-        <div className="flex h-[400px] w-full items-center justify-center overflow-hidden  sm:h-full">
-        </div>
-        <TextEffect words={"I'm a  product maker(designer And a Full Stack WebDeveloper) Currently Based in India. I'm Passionate about building products that helps people and make difference in the world. currently I'm Working on web3 Technology"}>
+        <div className="flex h-[400px] w-full items-center justify-center overflow-hidden  sm:h-full text-green-500 font-semibold">
+        <TextEffect words={"I'm a  product maker(designer And a Full Stack WebDeveloper) Currently Based in India. I'm Passionate about building products that helps people and make difference in the world. currently I'm Working on web3 Technologies."}>
                 
         </TextEffect>
+        </div>
       </div>
     </div>
   );
