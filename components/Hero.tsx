@@ -3,7 +3,26 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { CoolMode } from "@/components/ui/cool-mode";
+const words = [
+  {
+    text: "Hi!",
+  },
+  {
+    text: "I ,Am",
+  },
+  {
+    text: "Harsh Sharma",
+  },
+  {
+    text: "a Full Stack",
+  },
+  {
+    text: "Developer.",
+    className: "text-blue-500 dark:text-blue-500",
+  },
+];
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -51,22 +70,25 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
-          <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          <TypewriterEffectSmooth words={words} />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Harsh Sharma, a Full Stack WebDeveloper based in India.
-          </p>
+          </p> */}
 
-          <a href="#about">
-            <MagicButton
-              title="Download cv"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+              Contact Me
+            </button>
+            <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
+              Download CV
+            </button>
+            <br/>
+            <CoolMode>
+        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">Click Me!</button>
+      </CoolMode>
+
+          </div>
         </div>
       </div>
     </div>

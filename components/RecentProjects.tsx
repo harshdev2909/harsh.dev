@@ -3,9 +3,10 @@ import { projects } from "./../data";
 import { PinContainer } from "./ui/Pin";
 import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
-
+import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 const RecentProjects = () => {
   return (
+    <NeonGradientCard>
     <div className="py-15">
         <h1 className="heading">
         A small selection of{" "}
@@ -14,13 +15,14 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center p-4 gap-10 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
+          className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+          key={item.id}
           >
+            
             <PinContainer
               title="github.com/harshdev2909"
               href="https://twitter.com/"
-            >
+              >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -63,11 +65,13 @@ const RecentProjects = () => {
             /></a>
           
         </div>
+        
           </PinContainer>
           </div>
         ))}
       </div>
     </div>
+    </NeonGradientCard>
   );
 };
 
