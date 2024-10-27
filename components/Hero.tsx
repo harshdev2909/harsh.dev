@@ -10,7 +10,7 @@ const words = [
     text: "Hi!",
   },
   {
-    text: "I ,Am",
+    text: "I 'Am",
   },
   {
     text: "Harsh Sharma",

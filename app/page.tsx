@@ -8,6 +8,7 @@ import RecentProjects from "../components/RecentProjects";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
+import { BentoGridThirdDemo } from "../components/BentoGridThirdDemo";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Skills/>
         <RecentProjects/>
         <Experience/>
+        <BentoGridThirdDemo/>
         <Footer/>
       </div>
     </main>
