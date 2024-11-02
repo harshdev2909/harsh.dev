@@ -266,7 +266,7 @@ const items = [
         description: (
             <span className="text-sm">
                 Transforming ideas into impactful digital experiences.{" "}
-                Lets collaborate to unlock your digital potential and achieve unparalleled success.
+                Lets collaborate to unlock your digital potential and achieve unparalleled success..
             </span>
         ),
         header: <SkeletonThree />,
