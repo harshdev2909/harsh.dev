@@ -6,6 +6,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 const RecentProjects = () => {
   return (
+    <section id="projects">
     <NeonGradientCard>
     <div className="py-15">
         <h1 className="heading">
@@ -72,6 +73,7 @@ const RecentProjects = () => {
       </div>
     </div>
     </NeonGradientCard>
+    </section>
   );
 };
 
