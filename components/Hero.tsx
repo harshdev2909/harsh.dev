@@ -61,8 +61,11 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          {/* <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
+          </p> */}
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          Full Stack Web Developer | Freelancer | 3x Hackathon winner | BlockChain Developer | devOps
           </p>
 
           {/**
@@ -70,7 +73,24 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
-          <TypewriterEffectSmooth words={words} />
+          {/* <TypewriterEffectSmooth words={words} /> */}
+          <div className="mb-6 sm:p-0 px-4 w-full group relative items-center mt-5">
+          <h1
+          // ref={titleRef}
+          className="text-white lg:text-[60px] sm:text-[40px] text-[20px] font-extrabold text-center"
+          >
+          Hey I
+          <span className="relative text-[#E4003A] my-0 mx-[15px] inline-block">
+            <span className="absolute top-0 left-0 w-full h-full bg-[#E4003A] opacity-10 -rotate-1"></span>
+            Am Harsh.
+          </span>
+          A
+          <span className="relative text-[#AF47D2] my-0 mx-[15px] inline-block">
+            <span className="absolute top-0 left-0 w-full h-full bg-[#AF47D2] opacity-10 rotate-3"></span>
+            Full Stack Developer.
+          </span>
+          </h1>
+          </div>
 
           {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Harsh Sharma, a Full Stack WebDeveloper based in India.
